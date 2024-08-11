@@ -15,4 +15,4 @@ RUN apt-get update && \
     ./aws/install && \
     rm -rf awscliv2.zip aws
 
-CMD ["python3", "etl.py"]
+CMD ["fastapi", "run", "app/main.py", "--port", "80"]
