@@ -15,4 +15,4 @@ RUN apt-get update && \
     ./aws/install && \
     rm -rf awscliv2.zip aws
 
-CMD ["fastapi", "run", "app/main.py", "--port", "80"]
+CMD ["fastapi", "run", "main.py", "--port", "80"]
