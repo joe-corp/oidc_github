@@ -1,0 +1,15 @@
+version: 0.2.0
+
+phases:
+  install:
+    commands:
+      - pip install -r requirements.txt
+  build:
+    commands:
+      - pytest --cov=src tests/
+      - coverage xml
+      - pylint src/
+artifacts:
+  files:
+    - report.xml
+    - coverage.xml

@@ -3,3 +3,5 @@ psycopg2-binary==2.9.9
 boto3==1.26.165
 fastapi[standard]
 pydantic
+fastapi
+python-dotenv
